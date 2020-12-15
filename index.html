@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BookList App</title>
+    
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">My <span class="text-warning">Book</span>List</h1>
+        <form action="" id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input id="title" class="form-control mb-2" type="text">
+                <label for="author">Author</label>
+                <input id="author" class="form-control mb-2" type="text">
+                <label for="isbn">ISBN</label>
+                <input id="isbn" class="form-control mb-2" type="text">
+
+                <input type="radio" id="read" name="gender" value="read">
+                <label for="read">Read</label>
+
+                <input type="submit" value="Add Book" class="btn btn-warning btn-block mt-4" id="submit-btn">
+            </div>
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Read</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
